@@ -1,0 +1,315 @@
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+  margin-right: 40px;
+}
+
+.nav-selected {
+  border-bottom: 3px solid white;
+}
+
+.home-first-section {
+  background-image: url("../imgs/1600x800.png");
+  background-size: cover;
+  color: white;
+  width: 100%;
+  position: relative;
+}
+
+nav {
+  float: right;
+}
+
+button {
+  background-color: rgba(255,255,255,0.50);
+  border: 3px solid white;
+  border-radius: 50px;
+  color: white;
+  padding: 20px 30px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.text-blue {
+  color: #2C2E6F;
+}
+
+body {
+  font-size: 150%;
+}
+
+.center {
+  width: 50%;
+  margin: auto;
+}
+
+.home-main {
+  margin-top: 7%;
+  margin-bottom: 9%;
+}
+
+.lavanda-logo {
+  width: 20%;
+  display: inline-block;
+  margin: 40px 0px 0px 80px;
+}
+
+#lavanda-logo-text {
+  display: inline-block;
+}
+
+.home-main-question {
+  font-size: 320%;
+  text-align: center;
+}
+
+nav {
+  margin: 40px 80px;
+}
+
+.home-main-button {
+  text-align: center;
+}
+
+.home-main-pre {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.center-text {
+  text-align:center;
+}
+
+.arrow-down {
+  display: inline-block;
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #fff
+}
+
+.home-como-funciona-section {
+  width: 100%;
+}
+
+.img-container {
+  margin: auto;  
+  width: 81%;
+  display: block;
+  text-align: center;
+}
+
+.img-inside-container {
+  position:relative;
+  display: inline-block;
+  float:left;
+  padding: 50px;
+}
+
+.home-descontos-section {
+  background-color: #F4F4F4;
+  color: white;
+  width: 100%;
+}
+
+#primeira-compra {
+  background-image: url("../imgs/350x280.png");
+  background-size: cover;
+  position: relative;
+}
+
+#recomende-um-amigo {
+  background-image: url("../imgs/350x280.png");
+  background-size: cover;
+  position: relative;
+}
+
+#compra-frequente {
+  background-image: url("../imgs/350x280.png");
+  background-size: cover;
+  position: relative;
+}
+
+.home-footer-section {
+  background-color: #151730;
+  overflow: auto;
+  color: white;
+}
+
+.btn-inside-img {
+}
+
+.footer-msg {
+  font-size: 50%;
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.footer-left {
+ display: inline-block;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.footer-right {
+  float: right;
+}
+
+.nav-footer {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    color: #2C2E6F;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #565DAA;
+    color: white;
+}
+
+
+
+
+.facebook {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+	width: 160px;
+	height:40px;
+	padding-top: 10px;
+    border: 0px solid #178bb6;
+    border-radius: 8px;
+    background: #3b5998;
+    font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+    color: #ffffff;
+    text-decoration: none;
+	margin-right: 10px;
+}
+
+.google {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+	width: 160px;
+	height:40px;
+	padding-top: 10px;
+    border: 0px solid #178bb6;
+    border-radius: 8px;
+    background: #d34836;
+    font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+#facebook-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.seguro-left {
+  margin-bottom: 100px;
+  margin-left: 10%;
+  margin-top: 100px;
+  width: 55%;
+}
+
+.competente-right {
+  margin-bottom: 100px;
+  margin-left: 40%;  
+  margin-top: 100px;
+  width: 55%;
+}

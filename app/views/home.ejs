@@ -3,99 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <title>Lavanda</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="icons/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
  
-  <section>
+  <section class="home-first-section">
     <header>
-      <img src="" alt="Lavanda">
+      <div class="lavanda-logo">
+        <img id="lavanda-logo-img" src="../imgs/80x100.png" alt="Lavanda">
+      </div>
       <nav>
         <ul>
-          <li>Home</li>
+          <li class="nav-selected">Home</li>
           <li>Contato</li>
           <li>Login</li>
         </ul>
       </nav>
     </header>
-    <div>
-      <h1>Vai uma ajuda com a bagunça?</h1>
-      <button>contratar limpeza</button>
-    </div>
-    <a href="#">nosso servico</a>
-    <img src="" alt="">
-  </section>
-  
-  <section>
-    <h1>Seguro</h1>
-    <div>
-      <p>Nossa prioridade é garantir que a sua casa esta segura em nossas mãos.</p>
-      <p>Temos um processo rigoroso de seleção e treinamento de diaristas para garantir a qualidade e confiabilidade do serviço</p>
-    </div>
-    <img src="" alt="">
-  </section>
-  
-  <section>
-    <h1>Competente</h1>
-    <div>
-      <p>Garantimos a melhor limpeza que a sua casa ja teve</p>
-      <p>Se você não ficar completamente satisfeito com o serviço refazemos a limpeza de graça</p>
-    </div>
-    <img src="" alt="">
-  <section>
-  
-  <section>
-    <div>
-      <h2>Como funciona?</h2>
-      <h4>é muito simples!</h4>
-    </div>
-    <div>
-      <img src="" alt="">
-      <h3>Escolha uma data</h3>
-    </div>
-    <div>
-      <img src="" alt="">
-      <h3>Pague online</h3>
-    </div>
-    <div>
-      <img src="" alt="">
-      <h3>Receba confirmação</h3>
-    </div>
-  <section>
-  
-  <section>
-    <h1>Descontos</h1>
-    <div>
-      <img src="" alt="">
-      <button></button>
-    </div>
-    <div>
-      <img src="" alt="">
-      <button></button>
-    </div>
-    <div>
-      <img src="" alt="">
-      <button></button>
-    </div>
-    <img src="" alt="">
-  </section>
-  
-  <section>
-    <footer>
-      <div>
-        <img src="" alt="">
-        <h6>2016 Lavanda. Todos os direitos reservados, Lavanda LLC</h6>
+    <div class="center home-main">
+      <h1 class="home-main-question">
+        <pre class="home-main-pre">Vai uma ajuda</pre>
+        <pre class="home-main-pre">com a bagunça?</pre>
+      </h1>
+      <div class="home-main-button">
+        <button id="myBtn">contratar limpeza</button>
       </div>
+    </div>
+    <div class="center center-text">
       <div>
-        <nav>
+        <a id="nosso-servico">nosso servico</a>
+        <div class="arrow-down"></div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="home-seguro-section">
+    <div class="seguro-left">
+      <h1 id="seguro" class="text-blue">Seguro</h1>
+      <div>
+        <p class="text-blue">Nossa prioridade é garantir que a sua casa esta segura em nossas mãos.</p>
+        <p>Temos um processo rigoroso de seleção e treinamento de diaristas para garantir a qualidade e confiabilidade do serviço</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="home-competente-section">
+    <div class="competente-right">
+      <h1 class="text-blue">Competente</h1>
+      <div>
+        <p class="text-blue">Garantimos a melhor limpeza que a sua casa ja teve</p>
+        <p>Se você não ficar completamente satisfeito com o serviço refazemos a limpeza de graça</p>
+      </div>
+    </div>
+  <section>
+  
+  <section class="home-como-funciona-section">
+    <div class="center center-text">
+      <h2>Como funciona?</h2>
+      <h5 class="text-blue">é muito simples!</h5>
+    </div>
+    <div class="img-container">
+      <div class="img-inside-container">
+        <i class="fa fa-calendar fa-5x" aria-hidden="true"></i>  
+        <h3>Escolha uma data</h3>
+      </div>
+      <div class="img-inside-container">
+        <i class="fa fa-lock fa-5x" aria-hidden="true"></i>
+        <h3>Pague online</h3>
+      </div>
+      <div class="img-inside-container">
+        <i class="fa fa-check fa-5x" aria-hidden="true"></i>
+        <h3>Receba confirmação</h3>
+      </div>
+    </div>
+  </section>
+  
+  <section class="home-descontos-section" style="clear:both;">
+    <h1 class="text-blue center-text">Descontos</h1>
+    <div class="img-container">
+      <div style="width:350px; height:280px;" id="primeira-compra" class="img-inside-container">
+        <button style="margin-left: 20px; margin-right: 20px;">Primeira compra</button>
+      </div>
+      <div style="width:350px; height:280px;" id="recomende-um-amigo" class="img-inside-container">
+        <button>Recomende um amigo</button>
+      </div>
+      <div style="width:350px; height:280px;" id="compra-frequente" class="img-inside-container">
+        <button>Compra frequente</button>
+      </div>
+    </div>
+    <div style="clear:both;" class="center-text">
+      <img src="../imgs/80x100.png" alt="Lavanda">
+    </div>
+  </section>
+  
+  <section class="home-footer-section" style="clear:both;">
+    <footer>
+      <div class="footer-left">
+        <img id="facebook-logo" src="../imgs/facebook_logo3.svg"><br>
+        <h6 class="footer-msg">&copy 2016 Lavanda. Todos os direitos reservados, Lavanda LLC</h6>
+      </div>
+      <div class="footer-right">
+        <nav class="nav-footer">
           <ul>
             <li>Home</li>
             <li>Contato</li>
             <li>Login</li>
+            <li>Trabalhe Conosco</li>
           </ul>
         </nav>
       </div>
     </footer>
   </section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Acesse sua conta</h2>
+    </div>
+    <div class="modal-body">
+      <a class="google" href="#">Google+</a>
+      <a class="facebook" href="#">Facebook</a>
+      ou <br>
+      <input type="text"><br>
+      <input type="password"><br>
+      <button>Entrar</button>
+    </div>
+    <div class="modal-footer">
+      <h3>Criar uma conta</h3>
+    </div>
+  </div>
+
+</div>
   
+  
+  
+  <script src="../js/jquery.min.js"></script>
+  <script>
+    $("#nosso-servico").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#seguro").offset().top
+      }, 2000);
+    });
+  </script>
+  
+  
+   
+   <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    } 
+  </script>
 </body>
 </html>
