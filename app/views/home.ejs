@@ -17,8 +17,8 @@
       <nav>
         <ul>
           <li class="nav-selected">Home</li>
-          <li>Contato</li>
-          <li>Login</li>
+          <li><a href="/contato">Contato</a></li>
+          <li id="btn-login">Login</li>
         </ul>
       </nav>
     </header>
@@ -28,7 +28,9 @@
         <pre class="home-main-pre">com a bagunça?</pre>
       </h1>
       <div class="home-main-button">
-        <button id="myBtn">contratar limpeza</button>
+        <button id="btn-contratar-empresa" class="btn-contartar-limpeza">
+          contratar limpeza
+        </button>
       </div>
     </div>
     <div class="center center-text">
@@ -83,14 +85,14 @@
   <section class="home-descontos-section" style="clear:both;">
     <h1 class="text-blue center-text">Descontos</h1>
     <div class="img-container">
-      <div style="width:350px; height:280px;" id="primeira-compra" class="img-inside-container">
-        <button style="margin-left: 20px; margin-right: 20px;">Primeira compra</button>
+      <div id="primeira-compra" class="img-inside-container">
+        <button style="margin-left: 20px; margin-right: 20px;" class="btn-primeira-compra">Primeira compra</button>
       </div>
-      <div style="width:350px; height:280px;" id="recomende-um-amigo" class="img-inside-container">
-        <button>Recomende um amigo</button>
+      <div id="recomende-um-amigo" class="img-inside-container">
+        <button class="btn-recomende-um-amigo">Recomende um amigo</button>
       </div>
-      <div style="width:350px; height:280px;" id="compra-frequente" class="img-inside-container">
-        <button>Compra frequente</button>
+      <div id="compra-frequente" class="img-inside-container">
+        <button class="btn-compra-frequente">Compra frequente</button>
       </div>
     </div>
     <div style="clear:both;" class="center-text">
@@ -117,31 +119,31 @@
     </footer>
   </section>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">×</span>
-      <h2>Acesse sua conta</h2>
+  <section>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">×</span>
+          <h1 class="center-text">Acesse sua conta</h1>
+        </div>
+        <div class="modal-body center-text">
+          <div>
+            <a class="google" href="#">Google+</a>
+          </div><br>
+          <div>
+            <a class="facebook" href="#">Facebook</a>
+          </div><br>
+          <h2 style="margin: 0px auto 5px auto;">ou</h2>
+          <input id="login-email" type="text" placeholder="login / email"><br>
+          <input id="login-senha" type="password" placeholder="senha"><br>
+          <button class="login-entrar">Entrar</button>
+        </div>
+        <div class="modal-footer center-text">
+          <h1>Criar uma conta</h1>
+        </div>
+      </div>
     </div>
-    <div class="modal-body">
-      <a class="google" href="#">Google+</a>
-      <a class="facebook" href="#">Facebook</a>
-      ou <br>
-      <input type="text"><br>
-      <input type="password"><br>
-      <button>Entrar</button>
-    </div>
-    <div class="modal-footer">
-      <h3>Criar uma conta</h3>
-    </div>
-  </div>
-
-</div>
-  
-  
+  </section>
   
   <script src="../js/jquery.min.js"></script>
   <script>
@@ -151,30 +153,25 @@
       }, 2000);
     });
   </script>
-  
-  
    
-   <script>
-    // Get the modal
+  <script>
     var modal = document.getElementById('myModal');
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
+    var btnContratarEmpresa = document.getElementById("btn-contratar-empresa");
+    var btnLogin = document.getElementById("btn-login");
     var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks the button, open the modal
-    btn.onclick = function() {
+    btnContratarEmpresa.onclick = function() {
         modal.style.display = "block";
     }
+    
+    btnLogin.onclick = function() {
+      modal.style.display = "block";
+    }
 
-    // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
     }
 
-    // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";

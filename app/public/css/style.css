@@ -23,7 +23,10 @@ nav {
   float: right;
 }
 
-button {
+.btn-contartar-limpeza,
+.btn-primeira-compra,
+.btn-recomende-um-amigo,
+.btn-compra-frequente {
   background-color: rgba(255,255,255,0.50);
   border: 3px solid white;
   border-radius: 50px;
@@ -111,6 +114,8 @@ nav {
   display: inline-block;
   float:left;
   padding: 50px;
+  width:350px; 
+  height:280px;
 }
 
 .home-descontos-section {
@@ -169,130 +174,171 @@ nav {
   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
 }
 
 /* Modal Content */
 .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
 
-/* Add Animation */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
 }
 
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
 }
 
-/* The Close Button */
 .close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-header {
-    padding: 2px 16px;
-    color: #2C2E6F;
+  padding: 2px 16px;
+  color: #2C2E6F;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+}
 
 .modal-footer {
-    padding: 2px 16px;
-    background-color: #565DAA;
-    color: white;
+  padding: 2px 16px;
+  background-color: #565DAA;
+  color: white;
 }
 
 
 
 
 .facebook {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-	width: 160px;
-	height:40px;
-	padding-top: 10px;
-    border: 0px solid #178bb6;
-    border-radius: 8px;
-    background: #3b5998;
-    font-family: 'Open Sans', sans-serif;
-	font-weight:700;
-    color: #ffffff;
-    text-decoration: none;
-	margin-right: 10px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 65%;
+  height: 55px;
+  padding-top: 25px;
+  border: 0px solid #178bb6;
+  border-radius: 8px;
+  background: #3b5998;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.facebook:hover,
+.facebook:focus {
+  background: #37528c;
+  color: #ffffff;
+  text-decoration: none;
+}
+.facebook:active {
+  background: #1ca4d6;
+}
+.facebook:before{
+  content:  "\0000a0";
+  display: inline-block;
+  height: 80px;
+  width: 17%;
+  line-height: 24px;
+  margin: 0 4px -6px -4px;
+  position: relative;
+  padding-left: 10px;
+  top: -50%;
+  left: -32%;
+  background: url("http://i.imgur.com/0bcxkOD.png") no-repeat center center #37528c;
+  background-size: 13px 24px;
+  -webkit-border-radius: 8px 0px 0px 8px;
+  -moz-border-radius: 8px 0px 0px 8px;
+  -o-border-radius: 8px 0px 0px 8px;
+  -ms-border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 0px 0px 8px;
 }
 
 .google {
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
-	width: 160px;
-	height:40px;
-	padding-top: 10px;
-    border: 0px solid #178bb6;
-    border-radius: 8px;
-    background: #d34836;
-    font-family: 'Open Sans', sans-serif;
-	font-weight:700;
-    color: #ffffff;
-    text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 65%;
+  height: 55px;
+  padding-top: 25px;
+  border: 0px solid #178bb6;
+  border-radius: 8px;
+  background: #d34836;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
 }
+
+.google:hover,
+.google:focus {
+  background: #c74534;
+  color: #ffffff;
+  text-decoration: none;
+}
+.google:active {
+  background: #1ca4d6;
+}
+.google:before{
+  content:  "\0000a0";
+  display: inline-block;
+  height: 80px;
+  width: 17%;
+  line-height: 24px;
+  margin: 0 4px -6px -4px;
+  position: relative;
+  padding-left: 10px;
+  top: -50%;
+  left: -34%;
+  background: url("http://i.imgur.com/GxFF74f.png") no-repeat center center #c74534;
+  background-size: 24px 24px;
+  -webkit-border-radius: 8px 0px 0px 8px;
+  -moz-border-radius: 8px 0px 0px 8px;
+  -o-border-radius: 8px 0px 0px 8px;
+  -ms-border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 0px 0px 8px;
+}
+
+
+
 
 
 #facebook-logo {
@@ -312,4 +358,35 @@ nav {
   margin-left: 40%;  
   margin-top: 100px;
   width: 55%;
+}
+
+#login-email {
+  border: 3px solid #2C2E6F;
+  border-radius: 20px;
+  width: 70%;
+  height: 55px;
+  margin-bottom: 10px;
+}
+
+#login-senha {
+  border: 3px solid #2C2E6F;
+  border-radius: 20px;
+  width: 70%;
+  height: 55px;
+  margin-bottom: 10px;
+}
+
+.login-entrar {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: #2C2E6F;
+  border-radius: 10px;
+  width: 30%;
+  font-size: 150%;
+  color: white;
+  padding: 10px 20px;
+}
+
+button {
+  
 }
