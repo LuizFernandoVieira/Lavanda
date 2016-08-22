@@ -19,6 +19,7 @@
           <li class="nav-selected">Home</li>
           <li><a href="/contato">Contato</a></li>
           <li id="btn-login">Login</li>
+          <li id="btn-cadastro">Cadastro</li>
         </ul>
       </nav>
     </header>
@@ -109,10 +110,10 @@
       <div class="footer-right">
         <nav class="nav-footer">
           <ul>
-            <li>Home</li>
-            <li>Contato</li>
-            <li>Login</li>
-            <li>Trabalhe Conosco</li>
+            <li><a id="home-footer-link">Home</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li id="btn-login-footer">Login</li>
+            <li><a href="/trabalheconosco">Trabalhe Conosco</a></li>
           </ul>
         </nav>
       </div>
@@ -145,38 +146,50 @@
     </div>
   </section>
   
+  <section>
+    <div id="cadastroModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-contato">×</span>
+          <h1 class="center-text">Crie sua conta</h1>
+        </div>
+        <div class="modal-body center-text">
+          <div>
+            <a class="google" href="#">Google+</a>
+          </div><br>
+          <div>
+            <a class="facebook" href="#">Facebook</a>
+          </div><br>
+          <h2 style="margin: 0px auto 5px auto;">ou</h2>
+          <input id="cadastro-email" type="text" placeholder="login / email"><br>
+          <input id="cadastro-senha" type="password" placeholder="senha"><br>
+          <input id="cadastro-confirmar-senha" type="password" placeholder="confirmar senha"><br>
+          <button class="login-entrar">Entrar</button>
+        </div>
+        <div class="modal-footer center-text">
+          <h1>Acessar minha conta</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <script src="../js/jquery.min.js"></script>
+  <script src="../js/login.js"></script>
+  <script src="../js/cadastro.js"></script>
+  
   <script>
-    $("#nosso-servico").click(function() {
+    $("#nosso-servico").click(function(){
       $('html, body').animate({
         scrollTop: $("#seguro").offset().top
       }, 2000);
     });
-  </script>
-   
-  <script>
-    var modal = document.getElementById('myModal');
-    var btnContratarEmpresa = document.getElementById("btn-contratar-empresa");
-    var btnLogin = document.getElementById("btn-login");
-    var span = document.getElementsByClassName("close")[0];
-
-    btnContratarEmpresa.onclick = function() {
-        modal.style.display = "block";
-    }
     
-    btnLogin.onclick = function() {
-      modal.style.display = "block";
-    }
-
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    } 
+    $("#home-footer-link").click(function(){
+      console.log("clicou");
+      $('html, body').animate({
+        scrollTop: $("#lavanda-logo-img").offset().top
+      }, 2000);
+    });
   </script>
 </body>
 </html>

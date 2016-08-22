@@ -174,7 +174,7 @@ nav {
   
 }
 
-/* The Modal (background) */
+/* Modal */
 .modal {
   display: none; 
   position: fixed; 
@@ -189,7 +189,6 @@ nav {
   background-color: rgba(0,0,0,0.4); 
 }
 
-/* Modal Content */
 .modal-content {
   position: relative;
   background-color: #fefefe;
@@ -201,7 +200,8 @@ nav {
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+  border-radius: 30px;
 }
 
 @-webkit-keyframes animatetop {
@@ -214,7 +214,8 @@ nav {
   to {top:0; opacity:1}
 }
 
-.close {
+.close,
+.close-contato {
   color: white;
   float: right;
   font-size: 28px;
@@ -222,7 +223,9 @@ nav {
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.close-contato:hover,
+.close-contato:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -241,11 +244,11 @@ nav {
   padding: 2px 16px;
   background-color: #565DAA;
   color: white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
-
-
-
+/* Facebook */
 .facebook {
   display: inline-block;
   text-align: center;
@@ -337,10 +340,6 @@ nav {
   border-radius: 8px 0px 0px 8px;
 }
 
-
-
-
-
 #facebook-logo {
   width: 70px;
   height: 70px;
@@ -360,7 +359,8 @@ nav {
   width: 55%;
 }
 
-#login-email {
+#login-email,
+#cadastro-email {
   border: 3px solid #2C2E6F;
   border-radius: 20px;
   width: 70%;
@@ -368,7 +368,9 @@ nav {
   margin-bottom: 10px;
 }
 
-#login-senha {
+#login-senha,
+#cadastro-senha,
+#cadastro-confirmar-senha {
   border: 3px solid #2C2E6F;
   border-radius: 20px;
   width: 70%;
@@ -385,8 +387,4 @@ nav {
   font-size: 150%;
   color: white;
   padding: 10px 20px;
-}
-
-button {
-  
 }
